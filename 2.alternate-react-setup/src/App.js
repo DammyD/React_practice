@@ -7,6 +7,7 @@ import './App.css';
 // JSX is the combination of html tags. It expands the ability of html(html on steriods)
 function App() {
   return (
+    // JSX
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
