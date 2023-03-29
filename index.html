@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Simple Form</title>
+</head>
+<body>
+    <form class="bio-form">
+        <div class="field">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" />
+        </div>
+
+        <div class="field">
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" />
+        </div>
+
+        <div class="field">
+        <input type="radio" name="gender" value="male" />Male<br />
+        <input type="radio" name="gender" value="female" />Female<br />
+        <input type="radio" name="gender" value="other" />Other
+        </div>
+
+        <div class="field">
+            <input list="Options" />
+            <datalist id="Options">
+                <option value="Option1"></option>
+                <option value="Option2"></option>
+                <option value="Option3"></option>
+            </datalist>
+        </div>
+
+        <div class="field">
+            <input type="submit" value="submit" />
+        </div>
+
+        <div class="field">
+        <input type="checkbox" name="correct" value="correct" />
+        </div>
+        
+    </form>
+</body>
+</html>
