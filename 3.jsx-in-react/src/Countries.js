@@ -1,7 +1,3 @@
-function ListItem(props) {
-    return <li>{props.name}</li>
-}
-
 function Countries() {
 
     const countries = ['Namiba', 'Kenya', 'Egypt']
