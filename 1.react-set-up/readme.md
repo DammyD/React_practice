@@ -45,7 +45,7 @@ function Greeting() {
 <!-- calling / instantiating component -->
 const element = <Greeting></Greeting>;
 
-When instantiating a component, the name of the component **must be capitalized**. it helps to give a distinction between a custom elements and HTML elements. It's not a convention, it's a MUST!
+When instantiating a component, the name of the component **must be capitalized**. It helps to give a distinction between a custom elements and HTML elements. It's not a convention, it's a MUST!
 
 A collection of components makes up a React application. React is a component driven architecture. JSX is the smallest unit of a component.
 
@@ -58,8 +58,31 @@ If you don't want to make use of the <div> element
 3. **Use camelCase for attribute:** JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. In your own components, you'll often want to read those attributs into variables. But javaScript has limitations on variable names for example theirnames cannot have `hypen or a class`, that is why attributes are written in camelCase
 
 # The use of Javascript in JSX with curly braces
-JSX lets you write HTML-like inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes, you want to add a littel JavaScript logic or reference a dynamic props inside that markup. In this situation, you can use `curly braces` in your JSX to `open a window` to JavaScript.
+JSX lets you write HTML-like inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes, you want to add a little JavaScript logic or reference a dynamic props inside that markup. In this situation, you can use `curly braces` in your JSX to `open a window` to JavaScript.
 
 # Where to use curly braces
 - As text directly inside a tag
 - As attributes immediately following the `=` sign
+
+# Component
+- The buildling block of any React element. 
+- It makes the task of building UIs much easier. 
+- It's a reusable piece of the UI.
+The technical definition of component in React: A component in React is a function, or a class with a render method(),that returns a React node.
+
+# Ways to write component
+- Function type/way
+- Class type/way
+
+The reason why function component was introduced was because back in the day, React components used to be denoted as class(ES6-style) after the advent of React 16.8, this changed. A new way to create React was introduced and that was via `function`. Function component return JSX. Functions can not handle state, only props.
+Class based component also return JSX but can do more than that, they have a method called state and props.
+A state is a concept
+
+# Significance of component Architecture
+- Stabilty of global state
+- Ease of expansion
+
+`import React from 'react'` is not necessarily needed for function-based component but in a class-based component, it is needed.
+
+# Props
+With props a component can be more dynamic such that whatever when pass into that component is being rendered in that component. The values are be used inside the component definition itself.
