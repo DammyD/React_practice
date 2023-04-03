@@ -1,11 +1,11 @@
 import AppsLauncherIcon from "./AppsLauncherIcon";
 import Avatar from "./Avatar";
 import MenuItem from "./MenuItem";
-
+import "../styles/header.css"
 const Header = () => {
     return (
-        <div style={{display: "flex", justifyContent: "flex-end", padding: "8px"}}>
-            <div style={{display: "flex", gap: "4px"}}>
+        <div className="app-header">
+            <div className="app-header-menu">
                 <MenuItem title={"Gmail"} />
                 {/* props.title = "Gmail" */}
                 <MenuItem title={"Images"} />
