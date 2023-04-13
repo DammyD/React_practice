@@ -85,4 +85,6 @@ A state is a concept
 `import React from 'react'` is not necessarily needed for function-based component but in a class-based component, it is needed.
 
 # Props
-With props a component can be more dynamic such that whatever when pass into that component is being rendered in that component. The values are be used inside the component definition itself.
+With props a component can be more dynamic such that whatever is pass into that component is being rendered in that component. The values are be used inside the component definition itself. It is used to pass data from one component to another.
+
+Anything is props is read only, it's cannot be modified directly and can only be made used of the the component id is being called. Props - properties
